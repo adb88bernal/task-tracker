@@ -1,0 +1,40 @@
+/*header*/
+.headerInfo{
+    transform: translateY(50px);
+    width: 100%;
+    height: 15rem;
+
+    @mixin atMedium{
+        height: 20rem;
+    }
+
+
+    &__title{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 200;
+        margin-bottom: 0;
+
+        @mixin atSmall{
+            font-size: 4.5rem;
+        }
+
+        @mixin atMedium{
+            font-size: 7rem;
+        }
+    }
+
+    &__subtitle{
+        margin-top: 1rem;
+        text-align: center;
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.2rem;
+        font-weight: 200;
+
+        @mixin atMedium{
+            font-size: 1.2rem;
+        }
+    }
+}

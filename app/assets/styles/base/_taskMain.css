@@ -1,0 +1,49 @@
+
+.taskMain{
+    height: 40rem;
+
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    &__description-title{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 200;
+
+        @mixin atMedium{
+            font-size: 2rem;
+        }
+    }
+
+    &__description-info{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+
+        @mixin atSmall{
+            width: 75%;
+        }
+
+        @mixin atLarge{
+            width: 55%;
+        }
+
+    }
+
+    &__task-title{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+
+    &__section{
+        text-align: center;
+    }
+
+}
+
+
