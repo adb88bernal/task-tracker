@@ -9,6 +9,7 @@
     }
 
     &__description-title{
+        margin-top: 3rem;
         text-align: center;
         font-size: 1.5rem;
         font-weight: 200;
@@ -31,6 +32,9 @@
         @mixin atLarge{
             width: 55%;
         }
+        &-last{
+            margin-bottom: 3rem;
+        }
 
     }
 
@@ -42,6 +46,13 @@
 
     &__section{
         text-align: center;
+    }
+
+    &__addTask{
+        margin: 1rem 0;
+        padding: 2rem 0;
+        text-align: center;
+        background-color: $mainBlue;
     }
 
 }

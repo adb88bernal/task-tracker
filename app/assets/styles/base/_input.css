@@ -1,17 +1,14 @@
 input{
     text-align: center;
-    width: 65%;
+    width: 80%;
 
     @mixin atSmall{
-        width: 50%;
+        width: 65%;
     }
 
     @mixin atMedium{
-        width: 75%;
+        width: 40%;
     }
 
-    @mixin atLarge{
-        width: 65%;
-    }
 
 }

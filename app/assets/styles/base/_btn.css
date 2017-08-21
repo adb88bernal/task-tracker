@@ -1,0 +1,15 @@
+.btn{
+    background: none;
+    border-style: solid;
+    border-radius: 50%;
+    padding: .4rem .7rem;
+    border-color: #28B9B5;
+    color: #28B9B5;
+    cursor: pointer;
+    outline:0;
+
+
+    &:active {
+        transform: translateY(2px);
+    }
+}

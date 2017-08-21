@@ -477,20 +477,13 @@ body{
     padding-right: 18px;
 }
 
-.add_task{
-    color: #76CA76;
-    background-color: white;
-    border-radius: 50%;
-    border-color: #84E184;
-}
-
 /*header*/
 
 .headerInfo{
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
     width: 100%;
     height: 15rem;
+    background-color: #34495e;
+    color: #fff;
 }
 
 @media (min-width: 800px) {
@@ -501,8 +494,9 @@ body{
   }
 
 .headerInfo__title{
+        padding-top: 4rem;
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 200;
         margin-bottom: 0;
     }
@@ -522,7 +516,7 @@ body{
   }
 
 .headerInfo__subtitle{
-        margin-top: 1rem;
+        margin-top: .5rem;
         text-align: center;
         width: 75%;
         margin-right: auto;
@@ -550,6 +544,7 @@ body{
     }
 
 .taskMain__description-title{
+        margin-top: 3rem;
         text-align: center;
         font-size: 1.5rem;
         font-weight: 200;
@@ -586,6 +581,10 @@ body{
     }
   }
 
+.taskMain__description-info-last{
+            margin-bottom: 3rem;
+        }
+
 .taskMain__task-title{
         text-align: center;
         font-size: 1.5rem;
@@ -596,16 +595,25 @@ body{
         text-align: center;
     }
 
+.taskMain__addTask{
+        margin: 1rem 0;
+        padding: 2rem 0;
+        text-align: center;
+        background-color: #34495e;
+    }
+
 input{
     text-align: center;
-    width: 65%;
+    width: 80%;
+
 
 }
 
 @media (min-width: 530px) {
 
 input{
-        width: 50%
+        width: 65%
+
 
 }
   }
@@ -613,15 +621,8 @@ input{
 @media (min-width: 800px) {
 
 input{
-        width: 75%
+        width: 40%
 
-}
-  }
-
-@media (min-width: 1000px) {
-
-input{
-        width: 65%
 
 }
   }
@@ -629,6 +630,28 @@ input{
 .contact{
     text-align: center;
     font-size: .8rem;
+}
+
+.btn{
+    background: none;
+    border-style: solid;
+    border-radius: 50%;
+    padding: .4rem .7rem;
+    border-color: #28B9B5;
+    color: #28B9B5;
+    cursor: pointer;
+    outline:0;
+}
+
+.btn:active {
+        -webkit-transform: translateY(2px);
+                transform: translateY(2px);
+    }
+
+.select{
+    background-color: #fff;
+    width: 6rem;
+    margin-bottom: .5rem;
 }
 
 

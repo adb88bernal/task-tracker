@@ -1,9 +1,13 @@
+$mainBlue: #34495e;
+
 body{
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
+
+
 
 /*col widths*/
 .col-4-md{
@@ -18,11 +22,4 @@ body{
 .container{
     padding-left: 18px;
     padding-right: 18px;
-}
-
-.add_task{
-    color: #76CA76;
-    background-color: white;
-    border-radius: 50%;
-    border-color: #84E184;
 }

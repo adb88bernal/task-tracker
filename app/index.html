@@ -16,39 +16,47 @@
     </div>
 
 
-    <div id="main" class="taskMain container">
+    <div id="main" class="taskMain">
         <div class="row">
-            <div class="taskMain__description">
+            <div class="taskMain__description container">
                 <h3 class="taskMain__description-title">How Task Tracker Works</h3>
                 <p class="taskMain__description-info">
                     &nbsp; &nbsp; &nbsp; &nbsp;Task Tracker helps you keeps track of your one-time, weekly, or monthly tasks in order to librate your mind from remembering often overlooked jobs. You're allowed to set up weekly, one-time, and monthly tasks.</p>
-                <p class="taskMain__description-info">
+                <p class="taskMain__description-info taskMain__description-info-last">
                     &nbsp; &nbsp; &nbsp; &nbsp;Depending on the type of task you choose, already completed weekly or monthly task will be in the trash repository but will reappear at the beginning of the week (<i>Monday</i>) or month (<i>1<sup>st</sup> of the month</i>). You are allowed to modify your task settings to best suit your needs.</p>
             </div>
 
+            <div class="taskMain__addTask">
+                <select class="select">
+                    <option value="oneTime" selected>One-time</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+                <input type='text' class="taskMain__weekly-add" placeholder="Enter Task Here">
+                <button class="btn ion-checkmark"></button>
+
+            </div>
+
+
+
             <div class="taskMain__section col-4-md">
-                    <h3 class="taskMain__task-title">Your Weekly Task</h3>
-                    <input type='text' class="taskMain__weekly-add" placeholder="Weekly Task">
-                    <button class="add_task ion-checkmark"></button>
+                    <h3 class="taskMain__task-title">Weekly Task</h3>
             </div>
 
             <div class="taskMain__section col-4-md">
                     <h3 class="taskMain__task-title">One-time Task</h3>
-                    <input type='text' class="taskMain__oneTime-add" placeholder="One-time Task">
-                    <button class="add_task ion-checkmark"></button>
             </div>
 
             <div class="taskMain__section col-4-md">
                     <h3 class="taskMain__task-title">Monthly Task</h3>
-                    <input type='text' class="taskMain__monthly-add" placeholder="Monthly Task">
-                    <button class="add_task ion-checkmark"></button>
+
             </div>
         </div>
     </div>
 
     <div id="footer" class="contact container">
-        <h4>Created &amp; Designed by Alexis D. Bernal</h4>
+        <h4>Designed &amp; Created by Alexis D. Bernal</h4>
     </div>
-
+    <script src='/assets/scripts/modules/app.js'></script>
 </body>
 </html>
